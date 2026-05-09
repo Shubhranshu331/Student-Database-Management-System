@@ -154,7 +154,7 @@ SELECT
 FROM Students     s
 JOIN Departments  d ON s.department_id  = d.department_id
 JOIN Enrollments  e ON s.student_id     = e.student_id
-WHERE e.status = 'completed'
+WHERE e.status = 'enrolled'
   AND e.marks IS NOT NULL
 GROUP BY s.student_id, s.first_name, s.last_name, d.department_name
 HAVING AVG(e.marks) >= 85
