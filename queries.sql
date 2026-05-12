@@ -245,10 +245,8 @@ WHERE s.student_id = 1            -- << replace with target student_id
 ORDER BY e.enrolled_on;
 
 
--- ------------------------------------------------------------
 --  Q13. Students who have NOT enrolled in any course yet
 --  Uses LEFT JOIN + IS NULL to find "orphan" student records.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS student_name,
