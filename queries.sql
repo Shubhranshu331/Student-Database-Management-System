@@ -161,11 +161,9 @@ HAVING AVG(e.marks) >= 85
 ORDER BY average_marks DESC;
 
 
--- ------------------------------------------------------------
 --  Q9. Course-wise average marks
 --  One row per course — shows how difficult each course is
 --  relative to others based on student performance.
--- ------------------------------------------------------------
 SELECT
     c.course_code,
     c.course_name,
