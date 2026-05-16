@@ -140,11 +140,9 @@ GROUP BY s.student_id, s.first_name, s.last_name, d.department_name
 ORDER BY average_marks DESC;
 
 
--- ------------------------------------------------------------
 --  Q8. Top-performing students  (average marks ≥ 85)
 --  Filters the aggregation above with HAVING.
 --  Great for honour-roll or scholarship reports.
--- ------------------------------------------------------------
 SELECT
     s.student_id,
     CONCAT(s.first_name, ' ', s.last_name) AS student_name,
