@@ -116,9 +116,8 @@ JOIN Departments  d ON c.department_id = d.department_id
 ORDER BY d.department_name, c.course_code;
 
 
--- ============================================================
 --  SECTION 3 — ADVANCED QUERIES
--- ============================================================
+
 
 --  Q7. Average marks per student (completed courses only)
 --  Aggregates each student's performance into a single row.
